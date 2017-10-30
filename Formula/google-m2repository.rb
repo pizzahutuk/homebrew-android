@@ -8,7 +8,7 @@ class GoogleM2repository < AndroidToolFormula
   url "https://dl.google.com/android/repository/google_m2repository_gms_v11_3_rc05_wear_2_0_5.zip"
   version "58"
   sha1 "05086add9e3a0eb1b67111108d7757a4337c3f10"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/m2repository").install Dir["*"]

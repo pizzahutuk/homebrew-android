@@ -6,8 +6,8 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-tool-formula
 class AndroidBuildTools%%BUILD_TOOL_VERSION%% < AndroidToolFormula
 %%ARCHIVE_INFO%%
 
-  depends_on "toonetown/android/android-sdk"
-  depends_on "toonetown/android/android-platform-tools"
+  depends_on "pizzahutuk/android/android-sdk"
+  depends_on "pizzahutuk/android/android-platform-tools"
 
   def install
     (prefix/"build-tools"/version).install Dir["*"]

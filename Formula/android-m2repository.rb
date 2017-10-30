@@ -8,7 +8,7 @@ class AndroidM2repository < AndroidToolFormula
   url "https://dl.google.com/android/repository/android_m2repository_r47.zip"
   version "47.0.0"
   sha1 "a0d22beacc106a6977321f2b07d692ce4979e96a"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/android/m2repository").install Dir["*"]

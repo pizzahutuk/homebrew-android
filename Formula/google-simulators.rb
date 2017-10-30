@@ -8,7 +8,7 @@ class GoogleSimulators < AndroidToolFormula
   url "https://dl.google.com/android/repository/simulator_r01.zip"
   version "1"
   sha1 "4fb5344e34e8faab4db18af07dace44c50db26a7"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/simulators").install Dir["*"]

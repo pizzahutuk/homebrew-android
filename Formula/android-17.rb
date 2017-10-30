@@ -11,7 +11,7 @@ class Android17 < AndroidPlatformFormula
   target_name      "android"
 
   # Dependencies for docs, sources, and samples
-  sources ["toonetown/android/android-17-sources"]
+  sources ["pizzahutuk/android/android-17-sources"]
 
   test do
     system "true"

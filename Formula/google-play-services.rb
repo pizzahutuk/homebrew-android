@@ -8,7 +8,7 @@ class GooglePlayServices < AndroidToolFormula
   url "https://dl.google.com/android/repository/google_play_services_v13_2_rc09.zip"
   version "46"
   sha1 "534c63f30170d55329210d140bc29ca4e909e399"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/google_play_services").install Dir["*"]

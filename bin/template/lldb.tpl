@@ -6,8 +6,8 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-tool-formula
 class AndroidLldb%%LLDB_VERSION%% < AndroidToolFormula
 %%ARCHIVE_INFO%%
 
-  depends_on "toonetown/android/android-sdk"
-  depends_on "toonetown/android/android-ndk"
+  depends_on "pizzahutuk/android/android-sdk"
+  depends_on "pizzahutuk/android/android-ndk"
 
   def install
     (prefix/"lldb"/"%%LLDB_MAJ_MIN%%").install Dir["*"]

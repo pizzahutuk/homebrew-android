@@ -8,7 +8,7 @@ class GoogleAnalyticsSdkV2 < AndroidToolFormula
   url "https://dl.google.com/android/repository/GoogleAnalyticsAndroid_2.0beta5.zip"
   version "3"
   sha1 "dc14026bf0ce78315cb5dd00552607de0894de83"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/analytics_sdk_v2").install Dir["*"]

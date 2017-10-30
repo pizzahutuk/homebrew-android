@@ -8,7 +8,7 @@ class GooglePlayServicesFroyo < AndroidToolFormula
   url "https://dl.google.com/android/repository/google_play_services_3265130_r12.zip"
   version "12"
   sha1 "92558dbc380bba3d55d0ec181167fb05ce7c79d9"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/google_play_services_froyo").install Dir["*"]

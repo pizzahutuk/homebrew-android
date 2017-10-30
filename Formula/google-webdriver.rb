@@ -7,7 +7,7 @@ class GoogleWebdriver < AndroidToolFormula
   url "https://dl.google.com/android/repository/webdriver_r02.zip"
   version "2"
   sha1 "13f3a3b2670a5fc04a7342861644be9a01b07e38"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/webdriver").install Dir["*"]

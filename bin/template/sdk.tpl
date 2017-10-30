@@ -37,8 +37,8 @@ class AndroidSdk < AndroidToolFormula
       export ANDROID_HOME=#{opt_prefix}
 
     If you haven't already done so, you will probably want to:
-      brew install toonetown/android/android-platform-tools toonetown/android/android-build-tools
-    And you probably want to install one of the toonetown/android/android-platform-XX packages too
+      brew install pizzahutuk/android/android-platform-tools pizzahutuk/android/android-build-tools
+    And you probably want to install one of the pizzahutuk/android/android-platform-XX packages too
     EOS
   end
 

@@ -8,7 +8,7 @@ class GoogleMarketApkExpansion < AndroidToolFormula
   url "https://dl.google.com/android/repository/market_apk_expansion-r03.zip"
   version "1"
   sha1 "5305399dc1a56814e86b8459ce24871916f78b8c"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/market_apk_expansion").install Dir["*"]

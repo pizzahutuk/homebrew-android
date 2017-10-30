@@ -17,7 +17,7 @@ class GoogleApis14 < AndroidPlatformFormula
     Pkg.Revision=#{version}
   EOS
 
-  depends_on "toonetown/android/android-14"
+  depends_on "pizzahutuk/android/android-14"
 
   test do
     system "true"

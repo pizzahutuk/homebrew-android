@@ -61,7 +61,7 @@ function gen_sdk_extra {
             do_replace "ARCHIVE_INFO" "$(apply_xsl ${2} "${REPO_FILE}" "${API_PARAM}")" | \
             do_replace "API_VERSION" "${plat}" \
                 > "${FORMULA_DIR}/android-${plat}-${2}.rb" || return $?
-        sed_inplace "s|%%${UPPER}%%|\"toonetown/android/android-${plat}-${2}\"|" \
+        sed_inplace "s|%%${UPPER}%%|\"pizzahutuk/android/android-${plat}-${2}\"|" \
                     "${FORMULA_DIR}/android-${plat}.rb"
     else
         remove_line "%%${UPPER}%%" "${FORMULA_DIR}/android-${plat}.rb"
@@ -149,7 +149,7 @@ for plat in $(apply_xsl list-platforms "${REPO_FILE}"); do
                 > "${FORMULA_DIR}/${NAME}.rb" || exit $?
 
         if [ -n "$(echo "${img}" | cut -d'|' -f5)" ]; then
-            sed_inplace "s|\(%%SYSIMG%%\)|    \"toonetown/android/${NAME}\",$(printf '\a')\1|" \
+            sed_inplace "s|\(%%SYSIMG%%\)|    \"pizzahutuk/android/${NAME}\",$(printf '\a')\1|" \
                         "${FORMULA_DIR}/android-${plat}.rb"
         fi
     done

@@ -8,7 +8,7 @@ class GoogleAdmobAdsSdk < AndroidToolFormula
   url "https://dl.google.com/android/repository/GoogleAdMobAdsSdkAndroid-6.4.1.zip"
   version "11"
   sha1 "0102859d9575baa0bf4fd5eb422af2ad0fe6cb82"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/admob_ads_sdk").install Dir["*"]

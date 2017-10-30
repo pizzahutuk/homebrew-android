@@ -8,7 +8,7 @@ class AndroidDocs < AndroidToolFormula
   version "24-r1"
   sha1 "eef58238949ee9544876cb3e002f2d58e4ee7b5d"
 
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"docs").install Dir["*"]

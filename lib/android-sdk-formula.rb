@@ -12,8 +12,8 @@ class AndroidSdkFormula < AndroidToolFormula
     cls.target_directory or raise FormulaSpecificationError, "Requires a target_directory"
     cls.target_name or raise FormulaSpecificationError, "Requires a target_name"
 
-    cls.depends_on "toonetown/android/android-sdk"
-    cls.depends_on "toonetown/android/android-platform-tools"
+    cls.depends_on "pizzahutuk/android/android-sdk"
+    cls.depends_on "pizzahutuk/android/android-platform-tools"
 
     super
   end
@@ -75,9 +75,9 @@ class AndroidSysimgFormula < AndroidToolFormula
     cls.abi or raise FormulaSpecificationError, "Requires an abi"
     cls.sysimg_tag or raise FormulaSpecificationError, "Requires a sysimg_tag"
 
-    cls.depends_on "toonetown/android/android-sdk"
-    cls.depends_on "toonetown/android/android-platform-tools"
-    cls.depends_on "toonetown/android/android-#{cls.api_version}"
+    cls.depends_on "pizzahutuk/android/android-sdk"
+    cls.depends_on "pizzahutuk/android/android-platform-tools"
+    cls.depends_on "pizzahutuk/android/android-#{cls.api_version}"
 
     super
   end

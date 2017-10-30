@@ -12,11 +12,11 @@ class FbAdb < Formula
     sha256 "1a70988d1082132abc28b6536ac2f4ae2b9cd13c1dc7f40f869b39023ce65e51" => :mountain_lion
   end
 
-  depends_on "toonetown/android/android-ndk" => :build
+  depends_on "pizzahutuk/android/android-ndk" => :build
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "pkg-config" => :build
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     ENV["ANDROID_NDK"] = Formula["android-ndk"].opt_prefix

@@ -11,7 +11,7 @@ class Android22 < AndroidPlatformFormula
   target_name      "android"
 
   # Dependencies for docs, sources, and samples
-  sources ["toonetown/android/android-22-sources"]
+  sources ["pizzahutuk/android/android-22-sources"]
 
   test do
     system "true"

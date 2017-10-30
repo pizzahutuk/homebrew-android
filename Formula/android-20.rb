@@ -11,7 +11,7 @@ class Android20 < AndroidPlatformFormula
   target_name      "android"
 
   # Dependencies for docs, sources, and samples
-  sources ["toonetown/android/android-20-sources"]
+  sources ["pizzahutuk/android/android-20-sources"]
 
   test do
     system "true"

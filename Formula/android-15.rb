@@ -11,7 +11,7 @@ class Android15 < AndroidPlatformFormula
   target_name      "android"
 
   # Dependencies for docs, sources, and samples
-  sources ["toonetown/android/android-15-sources"]
+  sources ["pizzahutuk/android/android-15-sources"]
 
   test do
     system "true"

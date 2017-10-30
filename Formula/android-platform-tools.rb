@@ -8,7 +8,7 @@ class AndroidPlatformTools < AndroidToolFormula
   version "26.0.2"
   sha1 "685bb47f28db4c739b1815be3155af1974929ea6"
 
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"platform-tools").install Dir["*"]

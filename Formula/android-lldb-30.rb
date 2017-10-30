@@ -9,8 +9,8 @@ class AndroidLldb30 < AndroidToolFormula
   version "3.0.4213617"
   sha1 "2492651690a215317b86c755cd4d584ec9838677"
 
-  depends_on "toonetown/android/android-sdk"
-  depends_on "toonetown/android/android-ndk"
+  depends_on "pizzahutuk/android/android-sdk"
+  depends_on "pizzahutuk/android/android-ndk"
 
   def install
     (prefix/"lldb"/"3.0").install Dir["*"]

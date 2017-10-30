@@ -18,7 +18,7 @@ class GoogleApis17SysimgI386 < AndroidSysimgFormula
     SystemImage.TagDisplay=Google APIs
   EOS
 
-  depends_on "toonetown/android/android-17"
+  depends_on "pizzahutuk/android/android-17"
 
   test do
     system "true"
