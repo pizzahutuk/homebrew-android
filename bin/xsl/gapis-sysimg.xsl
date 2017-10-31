@@ -6,8 +6,9 @@
     <xsl:param name="abi" />
     <xsl:output method="text" />
     <xsl:template match="sdk:sdk-sys-img">
-        <xsl:for-each select="sdk:system-image[string(sdk:codename) = '']">
-            <xsl:if test="sdk:api-level = $api-level and sdk:abi = $abi">
+        <xsl:for-each select="sdk:system-image[string(sdk:codename) = '' and sdk:api-level = $api-level and sdk:abi = $abi]">
+            <xsl:sort select="sdk:revision" order="descending"/>
+            <xsl:if test="position()=1">
                 <xsl:apply-templates select="." />
             </xsl:if>
         </xsl:for-each>
