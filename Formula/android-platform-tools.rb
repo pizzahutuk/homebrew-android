@@ -4,11 +4,11 @@ require "pathname"
 require Pathname(__FILE__).realpath.dirname.join("../lib", "android-tool-formula") unless defined?(android_tool_formula)
 
 class AndroidPlatformTools < AndroidToolFormula
-  url "https://dl.google.com/android/repository/platform-tools_r26.0.0-darwin.zip"
-  version "26.0.0"
-  sha1 "e75b6137dc444f777eb02f44a6d9819b3aabff82"
+  url "https://dl.google.com/android/repository/platform-tools_r26.0.2-darwin.zip"
+  version "26.0.2"
+  sha1 "685bb47f28db4c739b1815be3155af1974929ea6"
 
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"platform-tools").install Dir["*"]

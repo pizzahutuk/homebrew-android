@@ -8,7 +8,7 @@ class GoogleAuto < AndroidToolFormula
   url "https://dl.google.com/android/repository/desktop-head-unit-linux_r01.1.zip"
   version "1.1"
   sha1 "202a6e1b3009a0eb815f8c672d2d5b3717de6169"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/auto").install Dir["*"]

@@ -8,8 +8,8 @@ class AndroidBuildTools2110 < AndroidToolFormula
   version "21.1.0"
   sha1 "df619356c2359aa5eacdd48699d15b335d9bd246"
 
-  depends_on "toonetown/android/android-sdk"
-  depends_on "toonetown/android/android-platform-tools"
+  depends_on "pizzahutuk/android/android-sdk"
+  depends_on "pizzahutuk/android/android-platform-tools"
 
   def install
     (prefix/"build-tools"/version).install Dir["*"]

@@ -8,7 +8,7 @@ class GoogleGcm < AndroidToolFormula
   url "https://dl.google.com/android/repository/gcm_r03.zip"
   version "3"
   sha1 "ad066fd0dc7fc99d8aadac09c65a3c2519fbc7bf"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/gcm").install Dir["*"]

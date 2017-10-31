@@ -10,8 +10,8 @@ class AndroidNdkFormula < AndroidToolFormula
     cls=self.class
 
     cls.homepage 'https://developer.android.com/ndk/index.html'
-    cls.depends_on 'toonetown/android/android-sdk'
-    cls.depends_on "toonetown/android/android-platform-tools"
+    cls.depends_on 'pizzahutuk/android/android-sdk'
+    cls.depends_on "pizzahutuk/android/android-platform-tools"
     super
   end
 

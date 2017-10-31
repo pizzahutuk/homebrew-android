@@ -8,7 +8,7 @@ class GoogleMarketLicensing < AndroidToolFormula
   url "https://dl.google.com/android/repository/market_licensing-r02.zip"
   version "1"
   sha1 "355e8dc304a92a5616db235af8ee7bd554356254"
-  depends_on "toonetown/android/android-sdk"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/market_licensing").install Dir["*"]

@@ -5,10 +5,10 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-tool-formula
 
 class GoogleM2repository < AndroidToolFormula
   desc "Local Maven repository for Support Libraries"
-  url "https://dl.google.com/android/repository/google_m2repository_gms_v11_1_rc16_wear_2_0_3_rc1.zip"
-  version "53"
-  sha1 "9008082eb1e6ff5a78d32a1fed6915f266fc5013"
-  depends_on "toonetown/android/android-sdk"
+  url "https://dl.google.com/android/repository/google_m2repository_gms_v11_3_rc05_wear_2_0_5.zip"
+  version "58"
+  sha1 "05086add9e3a0eb1b67111108d7757a4337c3f10"
+  depends_on "pizzahutuk/android/android-sdk"
 
   def install
     (prefix/"extras/google/m2repository").install Dir["*"]

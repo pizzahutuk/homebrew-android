@@ -3,9 +3,9 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-sdk-formula"
 
 class GoogleApis22SysimgX8664 < AndroidSysimgFormula
   desc "Google APIs Intel x86 Atom_64 System Image"
-  url "https://dl.google.com/android/repository/sys-img/google_apis/x86_64-22_r13.zip"
-  version "13"
-  sha1 "6af4d6a5416ad04eac17f1852a2d467334435a0d"
+  url "https://dl.google.com/android/repository/sys-img/google_apis/x86_64-22_r17.zip"
+  version "17"
+  sha1 "3c3435cd65e1bf749490f9b90aba371360efe214"
   api_version "22"
   abi "x86_64"
   sysimg_tag "/google_apis"
@@ -18,7 +18,7 @@ class GoogleApis22SysimgX8664 < AndroidSysimgFormula
     SystemImage.TagDisplay=Google APIs
   EOS
 
-  depends_on "toonetown/android/android-22"
+  depends_on "pizzahutuk/android/android-22"
 
   test do
     system "true"

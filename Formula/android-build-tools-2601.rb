@@ -3,10 +3,10 @@
 require "pathname"
 require Pathname(__FILE__).realpath.dirname.join("../lib", "android-tool-formula") unless defined?(android_tool_formula)
 
-class AndroidBuildTools1700 < AndroidToolFormula
-  url "https://dl.google.com/android/repository/build-tools_r17-macosx.zip"
-  version "17.0.0"
-  sha1 "602ee709be9dbb8f179b1e4075148a57f9419930"
+class AndroidBuildTools2601 < AndroidToolFormula
+  url "https://dl.google.com/android/repository/build-tools_r26.0.1-macosx.zip"
+  version "26.0.1"
+  sha1 "cbde59de198916b390777dd0227921bfa2120832"
 
   depends_on "pizzahutuk/android/android-sdk"
   depends_on "pizzahutuk/android/android-platform-tools"

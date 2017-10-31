@@ -3,9 +3,9 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-sdk-formula"
 
 class GoogleApis26SysimgI386 < AndroidSysimgFormula
   desc "Google APIs Intel x86 Atom System Image"
-  url "https://dl.google.com/android/repository/sys-img/google_apis/x86-26_r04.zip"
-  version "4"
-  sha1 "d3945081a412d3ac3627c3e102276b018ef874bc"
+  url "https://dl.google.com/android/repository/sys-img/google_apis/x86-26_r06.zip"
+  version "6"
+  sha1 "06a708647b5ffc96d7ec8866eb5a6b8a52ff334b"
   api_version "26"
   abi "x86"
   sysimg_tag "/google_apis"
@@ -18,7 +18,7 @@ class GoogleApis26SysimgI386 < AndroidSysimgFormula
     SystemImage.TagDisplay=Google APIs
   EOS
 
-  depends_on "toonetown/android/android-26"
+  depends_on "pizzahutuk/android/android-26"
 
   test do
     system "true"
