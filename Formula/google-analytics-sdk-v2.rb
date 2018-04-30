@@ -16,7 +16,7 @@ class GoogleAnalyticsSdkV2 < AndroidToolFormula
 
     src_prop = prefix/"extras/google/analytics_sdk_v2/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=analytics_sdk_v2
       Pkg.Revision=#{version}

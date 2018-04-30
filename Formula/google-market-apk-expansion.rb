@@ -16,7 +16,7 @@ class GoogleMarketApkExpansion < AndroidToolFormula
 
     src_prop = prefix/"extras/google/market_apk_expansion/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=market_apk_expansion
       Pkg.Revision=#{version}

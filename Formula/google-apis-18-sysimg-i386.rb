@@ -10,7 +10,7 @@ class GoogleApis18SysimgI386 < AndroidSysimgFormula
   abi "x86"
   sysimg_tag "/google_apis"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=18
     Pkg.Revision=#{version}
     SystemImage.Abi=x86

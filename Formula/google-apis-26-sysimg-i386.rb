@@ -3,14 +3,14 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-sdk-formula"
 
 class GoogleApis26SysimgI386 < AndroidSysimgFormula
   desc "Google APIs Intel x86 Atom System Image"
-  url "https://dl.google.com/android/repository/sys-img/google_apis/x86-26_r06.zip"
-  version "6"
-  sha1 "06a708647b5ffc96d7ec8866eb5a6b8a52ff334b"
+  url "https://dl.google.com/android/repository/sys-img/google_apis/x86-26_r10.zip"
+  version "10"
+  sha1 "cdef9b36549d156c417c91929eb8e205de8825c9"
   api_version "26"
   abi "x86"
   sysimg_tag "/google_apis"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=26
     Pkg.Revision=#{version}
     SystemImage.Abi=x86

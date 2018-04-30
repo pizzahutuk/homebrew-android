@@ -10,7 +10,7 @@ class GoogleApis10SysimgArmv7 < AndroidSysimgFormula
   abi "armeabi-v7a"
   sysimg_tag "/google_apis"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=10
     Pkg.Revision=#{version}
     SystemImage.Abi=armeabi-v7a

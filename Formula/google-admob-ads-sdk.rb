@@ -16,7 +16,7 @@ class GoogleAdmobAdsSdk < AndroidToolFormula
 
     src_prop = prefix/"extras/google/admob_ads_sdk/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=admob_ads_sdk
       Pkg.Revision=#{version}

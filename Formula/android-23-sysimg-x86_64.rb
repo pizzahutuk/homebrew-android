@@ -10,7 +10,7 @@ class Android23SysimgX8664 < AndroidSysimgFormula
   abi "x86_64"
   sysimg_tag "/default"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=23
     Pkg.Revision=#{version}
     SystemImage.Abi=x86_64

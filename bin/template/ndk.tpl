@@ -10,7 +10,7 @@ class AndroidNdk < AndroidNdkFormula
     "12" => 1,
   }[version.to_s])
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     We agreed to the Android NDK License Agreement for you by downloading the NDK.
     If this is unacceptable you should uninstall.
 

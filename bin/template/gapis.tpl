@@ -7,7 +7,7 @@ class GoogleApis%%API_VERSION%% < AndroidPlatformFormula
   target_directory "add-ons"
   target_name      "addon-google_apis-google"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     Addon.NameId=google_apis
     Addon.VendorId=google
     AndroidVersion.ApiLevel=%%API_VERSION%%

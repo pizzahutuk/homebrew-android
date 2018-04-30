@@ -16,7 +16,7 @@ class GoogleMarketLicensing < AndroidToolFormula
 
     src_prop = prefix/"extras/google/market_licensing/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=market_licensing
       Pkg.Revision=#{version}

@@ -16,7 +16,7 @@ class GoogleM2repository < AndroidToolFormula
 
     src_prop = prefix/"extras/google/m2repository/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=m2repository
       Pkg.Revision=#{version}

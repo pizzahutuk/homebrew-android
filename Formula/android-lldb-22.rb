@@ -18,7 +18,7 @@ class AndroidLldb22 < AndroidToolFormula
 
     pkg_xml = prefix/"lldb"/"2.2"/"package.xml"
     pkg_xml.delete if pkg_xml.exist?
-    pkg_xml.write <<-EOS.undent
+    pkg_xml.write <<~EOS
       <ns4:repository xmlns:ns4="http://schemas.android.com/repository/android/common/01">
         <localPackage obsolete="false" path="lldb;2.2">
           <revision>

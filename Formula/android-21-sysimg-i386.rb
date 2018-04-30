@@ -10,7 +10,7 @@ class Android21SysimgI386 < AndroidSysimgFormula
   abi "x86"
   sysimg_tag "/default"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=21
     Pkg.Revision=#{version}
     SystemImage.Abi=x86
