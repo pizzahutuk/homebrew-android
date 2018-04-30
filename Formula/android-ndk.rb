@@ -5,15 +5,15 @@ require Pathname(__FILE__).realpath.dirname.join("../lib", "android-ndk-formula"
 
 class AndroidNdk < AndroidNdkFormula
   desc "NDK"
-  url "https://dl.google.com/android/repository/android-ndk-r15c-darwin-x86_64.zip"
-  version "15c"
-  sha1 "ea4b5d76475db84745aa8828000d009625fc1f98"
+  url "https://dl.google.com/android/repository/android-ndk-r16b-darwin-x86_64.zip"
+  version "16b"
+  sha1 "e51e615449b98c716cf912057e2682e75d55e2de"
   revision ({
     "11c" => 1,
     "12" => 1,
   }[version.to_s])
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     We agreed to the Android NDK License Agreement for you by downloading the NDK.
     If this is unacceptable you should uninstall.
 

@@ -3,24 +3,24 @@
 require "pathname"
 require Pathname(__FILE__).realpath.dirname.join("../lib", "android-tool-formula") unless defined?(android_tool_formula)
 
-class AndroidLldb20 < AndroidToolFormula
-  desc "LLDB 2.0"
-  url "https://dl.google.com/android/repository/lldb-2.0.2558144-darwin-x86_64.zip"
-  version "2.0.2558144"
-  sha1 "d92e2f4c8284413eed4f27986e62b167d947033c"
+class AndroidLldb31 < AndroidToolFormula
+  desc "LLDB 3.1"
+  url "https://dl.google.com/android/repository/lldb-3.1.4508709-darwin-x86_64.zip"
+  version "3.1.4508709"
+  sha1 "2b37aa55b81a7e5b8a369febf1ac0bad6c7c5d58"
 
   depends_on "pizzahutuk/android/android-sdk"
   depends_on "pizzahutuk/android/android-ndk"
 
   def install
-    (prefix/"lldb"/"2.0").install Dir["*"]
-    install_tools prefix/"lldb"/"2.0"
+    (prefix/"lldb"/"3.1").install Dir["*"]
+    install_tools prefix/"lldb"/"3.1"
 
-    pkg_xml = prefix/"lldb"/"2.0"/"package.xml"
+    pkg_xml = prefix/"lldb"/"3.1"/"package.xml"
     pkg_xml.delete if pkg_xml.exist?
     pkg_xml.write <<~EOS
       <ns4:repository xmlns:ns4="http://schemas.android.com/repository/android/common/01">
-        <localPackage obsolete="false" path="lldb;2.0">
+        <localPackage obsolete="false" path="lldb;3.1">
           <revision>
             <major>#{version.to_s.split(".")[0]}</major>
             <minor>#{version.to_s.split(".")[1]}</minor>

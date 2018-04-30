@@ -10,7 +10,7 @@ class Android16SysimgArmv7 < AndroidSysimgFormula
   abi "armeabi-v7a"
   sysimg_tag "/default"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=16
     Pkg.Revision=#{version}
     SystemImage.Abi=armeabi-v7a

@@ -16,7 +16,7 @@ class GoogleSimulators < AndroidToolFormula
 
     src_prop = prefix/"extras/google/simulators/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=simulators
       Pkg.Revision=#{version}

@@ -7,7 +7,7 @@ class Android%%API_VERSION%%Sysimg%%SHORT_ABI%% < AndroidSysimgFormula
   abi "%%LONG_ABI%%"
   sysimg_tag "/%%SYSIMG_TAG%%"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=%%API_VERSION%%
     Pkg.Revision=#{version}
     SystemImage.Abi=%%LONG_ABI%%

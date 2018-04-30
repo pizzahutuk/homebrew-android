@@ -13,7 +13,7 @@ class %%VENDOR_NAME%%%%PATH_NAME%% < AndroidToolFormula
 
     src_prop = prefix/"extras/%%VENDOR%%/%%PATH%%/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=%%VENDOR%%
       Extra.Path=%%PATH%%
       Pkg.Revision=#{version}

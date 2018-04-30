@@ -15,7 +15,7 @@ class GoogleWebdriver < AndroidToolFormula
 
     src_prop = prefix/"extras/google/webdriver/source.properties"
     src_prop.delete if src_prop.exist?
-    src_prop.write <<-EOS.undent
+    src_prop.write <<~EOS
       Extra.VendorId=google
       Extra.Path=webdriver
       Pkg.Revision=#{version}

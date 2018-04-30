@@ -25,7 +25,7 @@ class AndroidSdk < AndroidToolFormula
     end
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     We agreed to the Android SDK License Agreement for you by downloading the SDK.
     If this is unacceptable you should uninstall.
 

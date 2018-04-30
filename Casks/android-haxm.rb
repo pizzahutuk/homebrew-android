@@ -16,7 +16,7 @@ cask 'android-haxm' do
 
   postflight do
     File.open("#{staged_path}/source.properties", 'w') do |src_prop|
-      src_prop.write <<-EOS.undent
+      src_prop.write <<~EOS
         Extra.VendorId=intel
         Extra.Path=Hardware_Accelerated_Execution_Manager
         Pkg.Revision=#{version}

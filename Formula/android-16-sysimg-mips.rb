@@ -10,7 +10,7 @@ class Android16SysimgMips < AndroidSysimgFormula
   abi "mips"
   sysimg_tag "/default"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=16
     Pkg.Revision=#{version}
     SystemImage.Abi=mips

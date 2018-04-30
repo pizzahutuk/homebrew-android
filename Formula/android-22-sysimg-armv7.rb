@@ -10,7 +10,7 @@ class Android22SysimgArmv7 < AndroidSysimgFormula
   abi "armeabi-v7a"
   sysimg_tag "/default"
 
-  src_properties <<-EOS.undent
+  src_properties <<~EOS
     AndroidVersion.ApiLevel=22
     Pkg.Revision=#{version}
     SystemImage.Abi=armeabi-v7a
