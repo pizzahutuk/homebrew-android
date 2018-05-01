@@ -40,7 +40,7 @@ class AndroidToolFormula < Formula
     
   def install_tools path
     Dir[path/"*"].select{ |f| File.file? f and File.executable? f }.each do |tool|
-      (bin/File.basename(tool)).write <<-EOS.undent
+      (bin/File.basename(tool)).write <<-EOS
         #!/bin/bash
         TOOL="#{tool}"
         exec "$TOOL" "$@"

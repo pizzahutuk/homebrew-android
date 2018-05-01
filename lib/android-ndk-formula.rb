@@ -22,7 +22,7 @@ class AndroidNdkFormula < AndroidToolFormula
 
     # Create a dummy script to launch the ndk apps
     ndk_exec = prefix+'ndk-exec.sh'
-    ndk_exec.write <<-EOS.undent
+    ndk_exec.write <<-EOS
       #!/bin/sh
       BASENAME=`basename $0`
       EXEC="#{prefix}/$BASENAME"
@@ -38,7 +38,7 @@ class AndroidNdkFormula < AndroidToolFormula
     pkg_xml.delete if pkg_xml.exist?
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
     We agreed to the Android NDK License Agreement for you by downloading the NDK.
     If this is unacceptable you should uninstall.
 
